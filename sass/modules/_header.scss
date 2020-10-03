@@ -1,0 +1,80 @@
+.yellowBoxNav {
+    position:relative;
+    display:inline-block;
+    /*float:right;*/
+    margin-right:30px;
+    text-align: center;
+    vertical-align: middle;
+    cursor: pointer;
+    background-color:#f3d83f;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 55px;
+    height: 45px;
+    color:white;
+    z-index: 25;
+
+    span { position:relative; top: 8px; font-size:3rem; }
+}
+
+.dropdown-menu { 
+    margin-top:25px;
+    padding-top:0;
+
+    .circleI { 
+        width:30px; height:30px;
+         -moz-border-radius:50%; 
+         border-radius:50%; 
+         background-color:#eff3f4; 
+         color:#ccc; 
+         text-align:center;
+         font-size:1.7rem;
+         margin:0 10px;
+         padding-top:5px;
+    }
+
+    li { 
+        position:relative; margin-right:0; /*padding:10px 0;*/
+
+        a { 
+            padding:10px 0; 
+        }
+    }
+
+    li:hover {
+        
+        .emptyCircle{
+            background-color:#fff;
+        }
+
+        .circleI {
+            background-color:#fff;
+        }
+    }
+
+    .divider { 
+        margin:0; 
+    }
+ }
+
+.dropdown-menu-right { right:-15px; }
+
+.mainHead {
+    height:110px;
+    background-color: #ffffff;
+}
+
+.clLogo { 
+    position:relative;
+    top: 50%;
+    transform: translateY(-50%);
+    left:40px;
+}
+
+.discussionDrop { 
+    margin:10px 0; width:200px; padding-bottom:0; 
+}
+
+.topPanel {
+    background-color:rgb(43, 43, 43);
+}
