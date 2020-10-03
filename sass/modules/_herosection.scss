@@ -1,9 +1,11 @@
 #topPanel { 
-    margin:0; position:relative; 
+    @include addMargins(0px 0px 0px 0px);
+    position:relative; 
 }
 
 #topPanel { 
-    margin:0; position:relative; 
+    @include addMargins(0px 0px 0px 0px);
+    position:relative; 
 }
 
 .profPanel { 
@@ -25,7 +27,9 @@
     }
 
     p:first-child { 
-        font-size:3rem; font-weight:300; margin-bottom:3px; 
+        font-size:3rem; 
+        font-weight:300; 
+        @include addMargins(0px 0px 3px 0px);
 
         span { 
             color:#9e9e9e; 
@@ -33,20 +37,26 @@
     }
 
     p:nth-child(2) { 
-        font-size:2.2rem; color:#690800; margin-top:-8px; 
+        font-size:2.2rem; 
+        color:#690800; 
+        @include addMargins(-8px 0px 0px 0px);
     }
 
     ul { 
-        color:#9e9e9e; padding-top:5px; font-weight:300; 
+        color:#9e9e9e; 
+        padding-top:5px; 
+        font-weight:300; 
     }
 
     span { 
-        margin-right:8px; 
+        @include addMargins(0px 8px 0px 0px);
     }
 }
 
 .profPanelText { 
-    position:relative; top:10px; left:20px; 
+    position:relative; 
+    top:10px; 
+    left:20px; 
 }
 
 #mainImg { 

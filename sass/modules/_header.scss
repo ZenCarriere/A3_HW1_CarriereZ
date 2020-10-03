@@ -2,7 +2,7 @@
     position:relative;
     display:inline-block;
     /*float:right;*/
-    margin-right:30px;
+    @include addMargins(0px 30px 0px 0px);
     text-align: center;
     vertical-align: middle;
     cursor: pointer;
@@ -14,27 +14,34 @@
     color:white;
     z-index: 25;
 
-    span { position:relative; top: 8px; font-size:3rem; }
+    span { 
+        position:relative; 
+        top: 8px; 
+        font-size:3rem; 
+    }
 }
 
 .dropdown-menu { 
-    margin-top:25px;
+    @include addMargins(25px 0px 0px 0px);
     padding-top:0;
 
     .circleI { 
-        width:30px; height:30px;
+        width:30px; 
+        height:30px;
          -moz-border-radius:50%; 
          border-radius:50%; 
          background-color:#eff3f4; 
          color:#ccc; 
          text-align:center;
          font-size:1.7rem;
-         margin:0 10px;
+         @include addMargins(0px 10px 0px 10px);
          padding-top:5px;
     }
 
     li { 
-        position:relative; margin-right:0; /*padding:10px 0;*/
+        position:relative; 
+        @include addMargins(0px 0px 0px 0px);
+        /*padding:10px 0;*/
 
         a { 
             padding:10px 0; 
@@ -53,7 +60,7 @@
     }
 
     .divider { 
-        margin:0; 
+        @include addMargins(0px 0px 0px 0px);
     }
  }
 
@@ -72,7 +79,10 @@
 }
 
 .discussionDrop { 
-    margin:10px 0; width:200px; padding-bottom:0; 
+
+    @include addMargins(10px 0px 10px 0px);
+    width:200px; 
+    padding-bottom:0; 
 }
 
 .topPanel {

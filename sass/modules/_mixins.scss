@@ -1,0 +1,6 @@
+@mixin addMargins($values...){
+    @each $var in $values {
+        margin: #{$var};
+    }
+
+}
