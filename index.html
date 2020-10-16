@@ -77,66 +77,50 @@
             <img class="img-responsive" src="images/eEdu_mainImg.jpg" alt="oil and gas banner" id="topImg">
           </div>
           <div class="profPanel panel panel-default">
+
+
+
+
+
+
+
+
+
             <div class="profPanelText">
 
               <!-- <h2 class="hidden">Prof Panel</h2> -->
 
-              <!-- REPLACE THIS CONTENT WITH DATA PULLED IN FROM classData.js -->
+              <!-- REPLACE THIS CONTENT WITH DATA PULLED IN FROM classData.json -->
 
-              <p class="text-muted"><span class="text-primary"></span></p>
-              <p></p>
+              <section class="class-section"></section>
+
               <!-- class times go here -->
-              <ul class="list-inline"></ul>
 
               <!-- END DYNAMIC DATA -->
             </div>
+
+    <template id="class-template">
+        <div class="class">
+            <p class="course-name"></p>
+            <p class="course-code"></p>
+            <p class="prof-name"></p>
+            <ul class="class-time"></ul>
+            <p class="course-desc"></p>
+            <ul class="course-content"></ul>
+        </div>
+    </template>
+
+
+
+
+
+
 
             <img src="images/eEdu_prof.jpg" alt="prof image" class="img-circle profileImg">
           </div>
         </section>
 
         <!-- STOP HERE - YOUR SASS REBUILD IS DONE -->
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 
@@ -321,7 +305,6 @@
   <!-- javascript includes -->
   <script src="http://code.jquery.com/jquery-latest.min.js"></script>
   <script src="js/bootstrap.min.js"></script>
-  <script src="data/classData.js"></script>
   <script src="js/main.js"></script>
 </body>
 
